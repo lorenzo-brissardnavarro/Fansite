@@ -348,7 +348,7 @@ input {
 .nav-footer {
     flex-direction: row;
     color: var(--white-blue);
-    background-color: var(--blue);
+    background-color: var(--red);
     margin-top: 5em;
 }
 
