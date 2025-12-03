@@ -113,6 +113,10 @@ nav ul li {
     gap: 1em;
 }
 
+.secondary-nav li:hover {
+    background: var(--dark-blue);
+}
+
 .box-title {
     display: flex;
     gap: 1.4em;
@@ -148,4 +152,8 @@ nav ul li {
 }
 .section-footer {
     display: flex;
+}
+
+.section-footer a:hover {
+    color: var(--light-blue);
 }
