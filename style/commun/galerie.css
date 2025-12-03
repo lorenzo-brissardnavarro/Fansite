@@ -1,0 +1,22 @@
+.center {
+    position: relative;
+    width: 770px;
+    left: -70px;
+}
+
+.center .img-card {
+    position: relative;
+    height: 350px;
+    width: 400px;
+}
+
+.img-card img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-card img:nth-child(1) {
+    transform: rotate();
+}

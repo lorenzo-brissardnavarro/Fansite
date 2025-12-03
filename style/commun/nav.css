@@ -60,6 +60,10 @@ nav ul li {
     cursor: pointer;
 }
 
+.nav-person {
+    gap: 4em;
+}
+
 .nav-tab i.fa-chevron-down {
     transition: transform 0.3s ease;
 }
