@@ -18,7 +18,6 @@ h1 {
 }
 
 
-
 .presentation-section {
     position: relative;
 }
@@ -27,12 +26,44 @@ h1 {
     display: flex;
 }
 
-.picture-board img {
+.picture-item {
+    position: relative;
     width: 33.3%;
+    overflow: hidden;
+}
+
+.picture-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform .3s ease;
     animation: opacity 3s ease-in-out;
     animation-fill-mode: forwards;
 }
+
+.picture-item:hover img {
+    transform: scale(1.05);
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 2.2rem;
+    color: #fff;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity .3s ease, transform .3s ease;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.picture-item:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 h2 {
     font-family: "Mea Culpa", cursive;
