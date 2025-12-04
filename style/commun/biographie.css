@@ -112,6 +112,10 @@
     border-bottom: 3px solid var(--red);
 }
 
+.bio-wrapper h4 {
+    color: var(--dark-blue);
+}
+
 
 .bio-wrapper p {
     line-height: 1.8;
