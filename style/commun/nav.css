@@ -64,6 +64,10 @@ nav ul li {
     gap: 4em;
 }
 
+.nav-person a:hover{
+    color: var(--white-blue);
+}
+
 .nav-tab i.fa-chevron-down {
     transition: transform 0.3s ease;
 }

@@ -106,6 +106,12 @@
     font-weight: 800;
 }
 
+.bio-wrapper h3 {
+    color: var(--dark-blue);
+    padding-bottom: 0.7em;
+    border-bottom: 3px solid var(--red);
+}
+
 
 .bio-wrapper p {
     line-height: 1.8;
@@ -116,6 +122,7 @@
 .success-section {
     margin: 3em;
     padding: 1em;
+    text-align: center;
 }
 
 .success-grid {
@@ -140,8 +147,10 @@
 }
 
 .success-card img {
-    width: 70px;
+    width: 90px;
+    height: 115px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 

@@ -68,6 +68,10 @@ h2 {
     margin-top: 2em;
 }
 
+.values-cards:hover .value-card:not(:hover){
+    transform: scale(0.9);
+}
+
 .value-card {
     background-color: var(--light-blue);
     padding: 2em;
@@ -76,6 +80,10 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
     color: var(--dark-blue);
+}
+
+.value-card:hover {
+    transform: scale(1.1);
 }
 
 .card-1 {
