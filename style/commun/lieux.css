@@ -17,7 +17,6 @@ h1 {
 
 .spot {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     background: white;
@@ -41,8 +40,6 @@ h1 {
 
 
 .text {
-    flex: 1;
-    min-width: 280px;
     position: relative;
     z-index: 1;
 }
@@ -82,4 +79,62 @@ h1 {
     background: var(--blue);
     top: -30px;
     left: -30px;
+}
+
+@media screen and (max-width:474px){
+    .spot img {
+        width: 100%;
+        height: auto;
+    }
+    .spot {
+        padding: 30px 10px;
+    }
+    .text h3 {
+        font-size: 1rem;
+    }
+    .text p {
+        font-size: 0.7rem;
+    }
+    .container {
+        margin: 0 0.3em;
+    }
+    h1 {
+        font-size: 1.4rem;
+        margin: 1em;
+    }
+}
+@media screen and (max-width:639px) and (min-width:475px){
+    .text h3 {
+        font-size: 1.2rem;
+    }
+    .text p {
+        font-size: 0.8rem;
+    }
+    .container {
+        margin: 0 0.4em;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin: 1em;
+    }
+}
+
+
+@media screen and (max-width:900px) and (min-width:640px){
+    .text h3 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .container {
+        margin: 0 2em;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .spot {
+        flex-direction: column;
+        align-items: center;
+    }
 }

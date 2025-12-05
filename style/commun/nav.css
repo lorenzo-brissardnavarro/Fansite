@@ -165,3 +165,33 @@ nav ul li {
 .section-footer a:hover {
     color: var(--light-blue);
 }
+
+
+@media screen and (max-width:400px) {
+    nav ul,
+    .section-footer {
+        flex-direction: column;
+    }
+    .nav-tab {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:639px) {
+    nav ,
+    .nav-footer {
+        flex-direction: column;
+    }
+    .section-footer {
+        margin-bottom: 2em;
+    }
+    nav ul {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        gap: 0;
+    }
+}

@@ -139,11 +139,11 @@ h2 {
 }
 
 .blog-card {
-    width: 65%;
     background: var(--blue);
     border-radius: 25px;
     box-shadow: 0 10px 50px rgba(252, 56, 56, .3);
     padding: 2em;
+    margin: 0 1.5em;
     position: relative;
 }
 
@@ -202,8 +202,8 @@ h2 {
 
 .sliders {
     position: absolute;
-    top: 80%;
-    left: 70%;
+    bottom: 20px;
+    right: 25px;
 }
 
 .sliders .tap{
@@ -257,3 +257,103 @@ top: 0%;}
 }
 
 
+
+@media screen and (max-width:450px) {
+    .intro-section {
+        margin: 1em;
+        width: 80%;
+    }
+    .values-section {
+        margin: 0;
+    }
+    .news-section {
+        margin-top: 4em;
+    }
+    .content-part button {
+        font-size: 0.6em;
+        margin-bottom: 5em;
+    }
+    .blog-card {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:429px) {
+    h2 {
+        font-size: 1em;
+    }   
+}
+
+@media screen and (min-width:430px) and (max-width:599px) {
+    h2 {
+        font-size: 1.5em;
+    }   
+}
+
+@media screen and (min-width:600px) and (max-width:629px) {
+    h2 {
+        font-size: 1.7em;
+    }   
+}
+
+@media screen and (max-width:600px) {
+    .intro-section {
+        margin: 2em auto 2em;
+    }
+    h3,
+    h4 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    nav img {
+        height: 4.2em;
+    }
+}
+
+
+@media screen and (min-width:630px) and (max-width:829px) {
+    h2 {
+        font-size: 2em;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    .blog-card .inner-part {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-part {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:830px) and (max-width:1130px) {
+    h2 {
+        font-size: 2.5em;
+    }   
+}
+
+@media screen and (min-width:451px) and (max-width:1150px) {
+    .blog-card {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .values-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .value-card {
+        width: 60%;
+    }
+    .content-part {
+        margin-left: 0;
+    }
+    .inner-part img {
+        width: 10em;
+    }
+}

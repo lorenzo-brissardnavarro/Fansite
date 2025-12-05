@@ -1,6 +1,12 @@
+main {
+    margin: 0 1em;
+}
+
 .hero-profile {
-    margin: 3em 8em;
+    margin: 3em auto;
+    max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     padding: 20px;
@@ -44,13 +50,13 @@
 }
 
 .info-section {
-    margin: 3em 4em;
+    margin: 3em auto;
     padding: 2em;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 25px;
 }
 
@@ -124,14 +130,14 @@
 }
 
 .success-section {
-    margin: 3em;
+    margin: 3em auto;
     padding: 1em;
     text-align: center;
 }
 
 .success-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
 }
 
@@ -185,4 +191,53 @@
 
 .social-btn i {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width:380px) {
+    .hero-picture img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero-text h1,
+    .bio-wrapper h2 {
+        font-size: 2rem;
+    }
+    .info-card,
+    .social-btn {
+        font-size: 0.8em;
+    }
+    .bio-wrapper h3,
+    .success-card h3 {
+        font-size: 1em;
+    }
+    .success-section h2 {
+        font-size: 1.2em;
+    }
+    .bio-wrapper p,
+    .success-card p {
+        font-size: 1rem;
+    }
+    .success-grid,
+    .info-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media screen and (max-width:900px) {
+    .hero-profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio-section {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .info-section {
+        padding: 0;
+    }
 }
