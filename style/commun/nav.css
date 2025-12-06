@@ -65,7 +65,7 @@ nav ul li {
 }
 
 .nav-person a:hover{
-    color: var(--white-blue);
+    color: var(--red);
 }
 
 .nav-tab i.fa-chevron-down {
